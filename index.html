@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weekly To-Do List</h1>
+    
+    <!-- Navigation Tabs for Days -->
+    <div class="tabs">
+      <button class="tablinks" onclick="openDay(event, 'Monday')">Monday</button>
+      <button class="tablinks" onclick="openDay(event, 'Tuesday')">Tuesday</button>
+      <button class="tablinks" onclick="openDay(event, 'Wednesday')">Wednesday</button>
+      <button class="tablinks" onclick="openDay(event, 'Thursday')">Thursday</button>
+      <button class="tablinks" onclick="openDay(event, 'Friday')">Friday</button>
+      <button class="tablinks" onclick="openDay(event, 'Saturday')">Saturday</button>
+      <button class="tablinks" onclick="openDay(event, 'Sunday')">Sunday</button>
+    </div>
+
+    <!-- Day-Specific To-Do Lists -->
+    <div id="Monday" class="tabcontent">
+      <h3>Monday</h3>
+      <ul>
+        <li><input type="checkbox"> Aptitude Practice (6:00 AM – 8:00 AM)</li>
+        <li><input type="checkbox"> Breakfast (9:00 AM – 10:00 AM)</li>
+        <li><input type="checkbox"> DSA Practice (10:00 AM – 1:00 PM)</li>
+        <li><input type="checkbox"> Lunch (1:00 PM – 2:00 PM)</li>
+        <li><input type="checkbox"> HTML & CSS (2:00 PM – 7:00 PM)</li>
+        <li><input type="checkbox"> Dinner (8:00 PM – 9:00 PM)</li>
+        <li><input type="checkbox"> Interview Preparation (9:00 PM – 10:00 PM)</li>
+      </ul>
+    </div>
+
+    <div id="Tuesday" class="tabcontent">
+      <h3>Tuesday</h3>
+      <ul>
+        <li><input type="checkbox"> Aptitude Practice (6:00 AM – 8:00 AM)</li>
+        <li><input type="checkbox"> Breakfast (9:00 AM – 10:00 AM)</li>
+        <li><input type="checkbox"> DSA Practice (10:00 AM – 1:00 PM)</li>
+        <li><input type="checkbox"> Lunch (1:00 PM – 2:00 PM)</li>
+        <li><input type="checkbox"> JavaScript Practice (2:00 PM – 7:00 PM)</li>
+        <li><input type="checkbox"> Dinner (8:00 PM – 9:00 PM)</li>
+        <li><input type="checkbox"> Project Development (9:00 PM – 10:00 PM)</li>
+      </ul>
+    </div>
+
+    <div id="Wednesday" class="tabcontent">
+      <h3>Wednesday</h3>
+      <ul>
+        <li><input type="checkbox"> Aptitude Practice (6:00 AM – 8:00 AM)</li>
+        <li><input type="checkbox"> Breakfast (9:00 AM – 10:00 AM)</li>
+        <li><input type="checkbox"> DSA Practice (10:00 AM – 1:00 PM)</li>
+        <li><input type="checkbox"> Lunch (1:00 PM – 2:00 PM)</li>
+        <li><input type="checkbox"> Django, DRF, Python (2:00 PM – 7:00 PM)</li>
+        <li><input type="checkbox"> Dinner (8:00 PM – 9:00 PM)</li>
+        <li><input type="checkbox"> Coding Challenges/Debugging (9:00 PM – 10:00 PM)</li>
+      </ul>
+    </div>
+
+    <div id="Thursday" class="tabcontent">
+      <h3>Thursday</h3>
+      <ul>
+        <li><input type="checkbox"> Aptitude Practice (6:00 AM – 8:00 AM)</li>
+        <li><input type="checkbox"> Breakfast (9:00 AM – 10:00 AM)</li>
+        <li><input type="checkbox"> DSA Practice (10:00 AM – 1:00 PM)</li>
+        <li><input type="checkbox"> Lunch (1:00 PM – 2:00 PM)</li>
+        <li><input type="checkbox"> HTML & CSS (2:00 PM – 7:00 PM)</li>
+        <li><input type="checkbox"> Dinner (8:00 PM – 9:00 PM)</li>
+        <li><input type="checkbox"> Mock Interviews (9:00 PM – 10:00 PM)</li>
+      </ul>
+    </div>
+
+    <div id="Friday" class="tabcontent">
+      <h3>Friday</h3>
+      <ul>
+        <li><input type="checkbox"> Aptitude Practice (6:00 AM – 8:00 AM)</li>
+        <li><input type="checkbox"> Breakfast (9:00 AM – 10:00 AM)</li>
+        <li><input type="checkbox"> DSA Practice (10:00 AM – 1:00 PM)</li>
+        <li><input type="checkbox"> Lunch (1:00 PM – 2:00 PM)</li>
+        <li><input type="checkbox"> JavaScript Practice (2:00 PM – 7:00 PM)</li>
+        <li><input type="checkbox"> Dinner (8:00 PM – 9:00 PM)</li>
+        <li><input type="checkbox"> Project Development (9:00 PM – 10:00 PM)</li>
+      </ul>
+    </div>
+
+    <div id="Saturday" class="tabcontent">
+      <h3>Saturday</h3>
+      <ul>
+        <li><input type="checkbox"> Aptitude Practice (6:00 AM – 8:00 AM)</li>
+        <li><input type="checkbox"> Breakfast (9:00 AM – 10:00 AM)</li>
+        <li><input type="checkbox"> DSA Practice (10:00 AM – 1:00 PM)</li>
+        <li><input type="checkbox"> Lunch (1:00 PM – 2:00 PM)</li>
+        <li><input type="checkbox"> Django, DRF, Python (2:00 PM – 7:00 PM)</li>
+        <li><input type="checkbox"> Dinner (8:00 PM – 9:00 PM)</li>
+        <li><input type="checkbox"> Debugging & Testing Projects (9:00 PM – 10:00 PM)</li>
+      </ul>
+    </div>
+
+    <div id="Sunday" class="tabcontent">
+      <h3>Sunday</h3>
+      <ul>
+        <li><input type="checkbox"> Aptitude Practice (6:00 AM – 8:00 AM)</li>
+        <li><input type="checkbox"> Breakfast (9:00 AM – 10:00 AM)</li>
+        <li><input type="checkbox"> DSA Practice (10:00 AM – 1:00 PM)</li>
+        <li><input type="checkbox"> Lunch (1:00 PM – 2:00 PM)</li>
+        <li><input type="checkbox"> JavaScript Practice (2:00 PM – 7:00 PM)</li>
+        <li><input type="checkbox"> Dinner (8:00 PM – 9:00 PM)</li>
+        <li><input type="checkbox"> Weekly Review/Planning (9:00 PM – 10:00 PM)</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
